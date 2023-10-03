@@ -2,3 +2,22 @@
     width: 400px;
     height: 250px;
 }
+
+#whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  #whatsapp-button a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  #whatsapp-button img {
+    width: 60px;
+    height: 60px;
+  }
