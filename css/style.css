@@ -4,20 +4,136 @@
 }
 
 #whatsapp-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  animation: jump 0.5s ease infinite alternate;
+}
+
+#whatsapp-button a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+#whatsapp-button img {
+  width: 60px;
+   height: 60px;
+}
+
+@keyframes jump {
+  from {
+    transform: translateY(0);
   }
-  
-  #whatsapp-button a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    border-radius: 50%;
-  }
-  
-  #whatsapp-button img {
-    width: 60px;
-    height: 60px;
-  }
+
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+/* {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lora', serif;
+}*/
+
+h1, h2 {
+  font-family: 'Lora', serif;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #EDE9EA;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header div {
+  display: flex;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 600px;
+  height: 150px;
+ /* border: solid #000;*/
+}
+
+header div img {
+  margin: 0 auto;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 100%;
+  height: 80px;
+ /* border: solid #000;*/
+  background-color: #D3C5BA;
+  justify-content: center;
+}
+
+header nav ul li {
+  background-color: #D3C5BA;
+  width: 280px;
+
+}
+
+/*REVISAR ALINEACIÓN DE LINKS*/
+header nav ul li a {
+  display: block;
+  margin: 0 15px;
+  padding: 1.2em;
+  background-color: #AB8485;  
+  height: 60px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 90%;
+  align-items: center;
+}
+
+header nav ul li a:hover {
+  background-color: #4A3A44;
+}
+
+#top-header {
+  max-width: 100%;
+  height: 30px; 
+}
+
+#top-header a {
+  float: right;
+  text-decoration: none;
+  margin: 0 15px;
+  color: #4A3A44;
+}
+
+footer {
+  display: flex;
+  border: solid #000;
+  height: 15em;
+  max-width: 100%;
+}
+
+#footer-redes {
+  float: left;
+  width: 50%;
+  background-color: #4A3A44;
+}
+
+#footer-sucursales {
+  float: right;
+  width: 50%;
+  background-color: #4A3A44;
+  text-align: right;
+}
+
+footer article {
+  float: right;
+}
