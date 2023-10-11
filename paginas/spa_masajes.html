@@ -14,22 +14,21 @@
 </head>
 
 <body>
-
     <div id="top-header">
-        <a href=""><i class="fa-brands fa-whatsapp fa-lg" style="color: #000000;"></i> 15-5555-6464</a>
-        <a href=""><i class="fa-regular fa-envelope fa-lg" style="color: #090a0c;"></i> info@beautycenter.com</a>
+        <a href="https://wa.me/+5491123036900?text=Hola%20desde%20mi%20sitio%20web" target="_blank"><i class="fa-brands fa-whatsapp fa-lg" style="color: #000000;"></i> 15-5555-6464</a>
+        <a href="mailto:beautycenter@spa.com?subject=Consulta%20servicios%20de%20spa"><i class="fa-regular fa-envelope fa-lg" style="color: #090a0c;"></i> info@beautycenter.com</a>
     </div>
 
     <header>
         <div>
-            <img src="../imagenes/Logo2.jpg" alt="logo">
+            <img src="../imagenes/Logo4.png" alt="logo">
         </div>
         <nav>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
-                <li><a href="#">Masajes y Spa</a></li>
+                <li><a href="#">Spa y Masajes</a></li>
                 <li><a href="manicura.html">Manicura</a></li>
-                <li><a href="faciales.html">Tratamientos faciales</a></li>
+                <li><a href="faciales.html">Faciales</a></li>
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
@@ -37,21 +36,25 @@
     </header>
 
     <main class="presentacion">
-        <h1>Masajes y Spa</h1>
-        <img src="../imagenes/spa1.jpg" alt="spa1">
-        <p class="contenido-presentacion">Cada sesión se realiza en un espacio dedicado al bienestar y relajación. <br>Incluye aromaterapia y el uso de aceites esenciales para ayudar a crear un ambiente tranquilo.</p>
+        <h1>SPA Y MASAJES</h1>
+        <img src="../imagenes/presentacion-spa.jpg" alt="spa1">
+        <div class="texto-presentacion">
+            <p class="contenido-presentacion">Cada sesión se realiza en un espacio dedicado al bienestar y relajación. <br>Incluye aromaterapia y el uso de aceites esenciales para ayudar a crear un ambiente tranquilo.</p>
+        </div>
     </main>
     
-    <h1>Conocé nuestras propuestas</h1>
+    <h2>Conocé nuestras propuestas</h2>
     
-    <section class="servicios">
+    <section id="opciones-spa">
         <div class="bloque">
-            <h2>Relajantes</h2>
-                <img class="derecha" src="../imagenes/spa2.jpg" alt="spa2">
-                <article id="contenido-relajantes">
-                    <p>Se centra en aliviar la tensión muscular y mejorar la circulación sanguínea. 
-                    Ideal para aquellos que buscan reducir el estrés y la ansiedad, 
-                    mejorar la calidad del sueño y aliviar la tensión muscular.
+            <h2 class="titulo-izq">Relajantes</h2>
+                <figure class="img-der">
+                    <img src="../imagenes/spa2.jpg" alt="spa2">
+                </figure>
+                <article class="contenido-izq">
+                    <p>Alivia la tensión muscular y mejora la circulación sanguínea. 
+                    Ideal para aquellos que buscan reducir el estrés y la ansiedad, y
+                    mejorar la calidad del sueño.
                     </p>
                     <div class="boton-turno">
                         <a href="#">Solicitar Turno</a>
@@ -59,21 +62,25 @@
                 </article>
         </div>
         <div class="bloque">
-            <h2>Reflexología</h2>
-                <img class="izquierda" src="../imagenes/spa3.jpg" alt="spa3">
-                <article id="contenido-reflexología">
-                    <p>Estimulan las terminaciones nerviosas del organismo situadas en los pies y manos. 
-                    Aporta una sensación de alivio y actúa favoreciendo distintos órganos del cuerpo.
-                    </p>
-                    <div class="boton-turno">
-                        <a href="#">Solicitar Turno</a>
-                    </div>
-                </article>
+            <h2 class="titulo-der">Reflexología</h2>
+            <figure class="img-izq">
+                <img src="../imagenes/spa3.jpg" alt="spa3">
+            </figure>
+            <article class="contenido-der">
+                <p>Estimulan las terminaciones nerviosas del organismo situadas en los pies y manos. 
+                Aporta una sensación de alivio y actúa favoreciendo distintos órganos del cuerpo.
+                </p>
+                <div class="boton-turno">
+                    <a href="#">Solicitar Turno</a>
+                </div>
+            </article>
         </div>
         <div class="bloque">
-            <h2>Drenaje linfático</h2>
-            <img class="derecha" src="../imagenes/spa4.jpg" alt="spa4">
-            <article id="contenido-drenaje">
+            <h2 class="titulo-izq">Drenaje linfático</h2>
+            <figure class="img-der">
+                <img src="../imagenes/spa4.jpg" alt="spa4">
+            </figure>
+            <article class="contenido-izq">
                 <p>Ayudan a mejorar la circulación y eliminar toxinas del cuerpo. Tiene una acción sedante sobre el dolor, reduce la inflamación, y contribuye a mejorar las defensas del organismo.
                 </p>
                 <div class="boton-turno">
@@ -82,9 +89,11 @@
             </article>
         </div>
         <div class="bloque">
-            <h2>Sauna</h2>
-            <img class="izquierda" src="../imagenes/spa5.jpg" alt="spa5">
-            <article id="contenido-sauna">
+            <h2  class="titulo-der" >Sauna</h2>
+            <figure class="img-izq">
+                <img src="../imagenes/spa5.jpg" alt="spa5">
+            </figure>
+            <article class="contenido-der">
                 <p>Trae una gran cantidad de beneficios, entre ellos: ayuda a eliminar las toxinas del cuerpo, 
                     reduce los niveles de estrés, mejora la circulación y función de las articulaciones.
                 </p>
@@ -102,14 +111,16 @@
     </div>
 
     <footer>
-        <div>
+        <div id="footer-redes">
             <h3>Síguenos</h3>
-            <a href="#"><i class="fa-brands fa-whatsapp fa-lg" style="color: #21ab17;"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram fa-lg" style="color: #7364e8;"></i></a>
-            <a href="#"><i class="fa-brands fa-tiktok fa-lg" style="color: #000000;"></i></a>
-            <a href="#"><i class="fa-brands fa-pinterest fa-lg" style="color: #ff0000;"></i></a>
+            <div id="enlaces-redes">
+                <a href="https://wa.me/+5491123036900?text=Hola%20desde%20mi%20sitio%20web" target="_blank"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #fff;"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram fa-2xl" style="color: #fff;"></i></a>
+                <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok fa-2xl" style="color: #fff;"></i></a>
+                <a href="https://www.pinterest.com" target="_blank"><i class="fa-brands fa-pinterest fa-2xl" style="color: #fff;"></i></a>
+            </div>
         </div>
-        <div>
+        <div id="footer-sucursales">
             <h3>Sucursales</h3>
                 <ul>
                     <li>Recoleta: Peña 2200 - CABA</li>
