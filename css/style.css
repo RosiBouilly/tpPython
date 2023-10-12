@@ -81,9 +81,10 @@ header div {
 header div img {
   margin: 0 auto;
 }
-/*final top header y logo*/
+/*final top header + logo*/
 
 /*REVISAR CÓMO QUEREMOS QUE SE ACOMODE EL MENÚ AL ACHICAR LA PANTALLA*/
+/*Menu de navegación*/
 header nav ul {
   display: flex;
   flex-wrap: nowrap;
@@ -91,7 +92,6 @@ header nav ul {
   margin: 0 auto;
   max-width: 100%;
   height: 5em;
- /* border: solid #000;*/
   background-color:#E3D4CD;
   justify-content: center;
 }
@@ -123,137 +123,56 @@ header nav ul li a:hover {
 }
 /*termina menú de navegación*/
 
-#carouselExampleAutoplaying {
-  margin: 0 auto;
-  height: 25em;
-  border: solid #000;
-  width: 100%;
-  justify-content: center;
-  overflow: hidden;
-}
-
-/*ENCABEZADO PAGINAS SECUNDARIAS*/
+/*ENCABEZADO de PAGINAS SECUNDARIAS*/
 .presentacion {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
-  padding: 1em 2em;
-  height: 25em;
-  border: solid #000;
+  padding: 0.5em;
+  height: auto;
   width: 100%;
   justify-content: center;
   overflow: hidden;
   background-color: #EDE9EA;
 }
 
-.presentacion h1 {
-  margin-top: 1.5em;
-  float: right;
-  width: 50%;
-  height: 20%;
-  text-align: center;
-  border: solid #000;
+.img-presentacion {
+  border-radius: 1em;
+  margin: 1em auto;
+  width: 38em;
+  overflow: hidden;
+  object-fit: cover;
 }
 
 .presentacion img {
-  float: left;
-  border-radius: 1em;
+  
+}
+
+.contenido-presentacion {
+  margin: 1em auto;
+  width: 35em;
+  align-items: center;
+}
+.presentacion h1 {
+  margin-top: 0.5em;
+  width: auto;
+  height: 15%;
+  text-align: center;
 }
 
 .presentacion p {
   margin-top: 2em;
-  float: right;
-  width: 50%;
-  border: solid #000;
   text-align: center;
   line-height: 2em;
-  font-size: 1.1em;
+  font-size: 1em;
 }
+/*fin encabezado de páginas secundarias*/
 
-/*OPCIONES PAGINA SPA*/
-#opciones-spa {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding: 1em;
-}
-
-.bloque {
-  width: 100%;
-  height: 10%;
-  margin: 1em auto;
-  padding: 1em;
-  border: solid #000;
-}
-
-h2 {
-  text-align: center;
-}
-
-.titulo-izq {
-  float: left;
-  width: 70%;
-  text-align: left;
-  border: solid #000;
-}
-
-.titulo-der {
-  float: right;
-  width: 70%;
-  text-align: right;
-    border: solid #000;
-}
-
-.contenido-izq {
-  float: left;
-  width: 70%;
-  border: solid #000;
-  margin-top: 1em;
-  padding: 1em 0;
-  text-align: left;
-}
-
-.contenido-der {
-  float: right;
-  width: 70%;
-  border: solid #000;
-  margin-top: 1em;
-  padding: 1em 0;
-  text-align: right;
-}
-
-.img-der {
-  overflow:hidden;
-  margin: .5em 1.5em;
-  width: 15em;
-  height: 15em;
-  border-radius: 50%;
-  float: right;
-  border: solid #000;
-}
-
-.img-izq {
-  overflow: hidden;
-  margin: .5em 1.5em;
-  width: 15em;
-  height: 15em;
-  border-radius: 50%;
-  float: left;
-  border: solid #000;
-}
-
-.servicios img {
-  width: 100%;
-  height: 100%;
-  object-fit:cover;
-}
-
-
-/*OPCIONES SERVICIOS INDEX*/
-
-
+/*OPCIONES de SERVICIOS INDEX*/
 #servicios {
   display: flex;
   flex-wrap: wrap;
-  /*border: solid #000;*/
+  padding-top: 2em;
   height: 25em;
   margin: auto;
   width: 100%;
@@ -270,6 +189,7 @@ h2 {
   width: 15em;
   border-radius: 1em;
   background-color: #D3C5BA;
+  box-shadow: 0.4em 0.5em 0.6em rgba(0,0,0,0.3);
 }
 
 .tarjeta h2 {
@@ -280,7 +200,6 @@ h2 {
   color: #4A3A44;
   font-size: 1.25em;
   background-color: #D3C5BA;
-
 }
 
 .tarjeta .imagen-servicio {
@@ -296,29 +215,37 @@ h2 {
 }
 
 .boton-masinfo {
+  display: flex;
   margin: auto;
-  margin-top: 2em;
-  padding: 0.5em;
-  height: 12%;
+  width: 100%;
+  height: 25%;
   text-align: center;
-  background-color: #AB8485;
+  background-color: #D3C5BA;
   border-radius: 2em;
-  width: 50%;
-  box-shadow: 0.4em 0.5em 0.6em rgba(0,0,0,0.3);
+  justify-content: center;
 }
 
 .boton-masinfo a {
-  align-items: center;
+  width: 50%;
+  height: 50%;
+  padding-top: .5em;
+  margin-top: 1em;
   text-decoration: none;
   color: #4A3A44;
   font: 100%;
   background-color: #AB8485;
+  border-radius: 2em;
+  text-align: center;
+  box-shadow: 0.4em 0.5em 0.6em rgba(0,0,0,0.3);
 }
+
 
 .boton-masinfo a:hover {
   color: #fff;
 }
+/*fin sección opciones de servicios del index*/
 
+/*SECCIÓN NOSOTROS INDEX*/
 #nosotros {
   display: flex;
   flex-wrap: wrap;
@@ -355,8 +282,9 @@ h2 {
   border-radius: 2em;
   margin-right: 1em;
 }
+/*fin sección nosotros del index*/
 
-/*INSTALACIONES*/
+/*SECCIÓN INSTALACIONES DEL INDEX*/
 #instalaciones {
   display: flex;
   flex-wrap: wrap;
@@ -396,7 +324,242 @@ h2 {
   font-size: 1.2em;
   text-align: start;
 }
+/*fin sección instalaciones del index*/
 
+/*OPCIONES PAGINA SPA y FACIALES*/
+
+h2 {
+  text-align: center;
+  margin: 0;
+}
+
+.opciones-paginas {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1em;
+  margin: 0;
+  background-color: #EDE9EA;
+}
+
+.bloque {
+  width: 100%;
+  height: 10%;
+  margin: 1em auto;
+  padding: 1em;
+  background-color: #D3C5BA;
+  box-shadow: 0.4em 0.5em 0.6em rgba(0,0,0,0.5);
+}
+
+.titulo-izq {
+  float: left;
+  width: 70%;
+  text-align: left;
+  background-color: #D3C5BA;
+}
+
+.titulo-der {
+  float: right;
+  width: 70%;
+  text-align: right;
+  background-color: #D3C5BA;
+}
+
+.contenido-izq {
+  float: left;
+  width: 70%;
+  margin-top: 1em;
+  padding: 1em 0;
+  text-align: left;
+  background-color: #D3C5BA;
+}
+
+.contenido-der {
+  float: right;
+  width: 70%;
+  margin-top: 1em;
+  padding: 1em 0;
+  text-align: right;
+  background-color: #D3C5BA;
+}
+
+.bloque p {
+  font-size: 1.2em;
+  background-color: #D3C5BA;
+}
+
+.img-der {
+  overflow:hidden;
+  margin: .5em 1.5em;
+  width: 15em;
+  height: 15em;
+  border-radius: 50%;
+  float: right;
+  object-fit:cover
+}
+
+.img-izq {
+  overflow:hidden;
+  margin: .5em 1.5em;
+  width: 15em;
+  height: 15em;
+  border-radius: 50%;
+  float: left;
+}
+
+.servicios img {
+  width: 100%;
+  height: 100%;
+}
+
+.boton-turno {
+  margin: auto;
+  margin-top: 2em;
+  padding: 0.5em;
+  height: 12%;
+  text-align: center;
+  background-color: #AB8485;
+  border-radius: 2em;
+  width: 30%;
+  box-shadow: 0.4em 0.5em 0.6em rgba(0,0,0,0.3);
+}
+
+.boton-turno a {
+  align-items: center;
+  text-decoration: none;
+  color: #4A3A44;
+  font: 100%;
+  background-color: #AB8485;
+}
+
+.boton-turno a:hover {
+  color: #fff;
+}
+/*fin opciones pagina spa y faciales*/
+
+/*FORMULARIO CONTACTO*/
+
+#contacto {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em;
+  height: auto;
+  width: 100%;
+  justify-content: center;
+}
+
+form {
+  background-color: #D3C5BA;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 1em;
+  border-radius: 2em;
+  justify-content: center;
+  box-shadow: 0.4em 0.5em 0.6em rgba(0,0,0,0.3);
+}
+
+#datos-msj {
+  display: flex;
+  background-color: #D3C5BA;
+  justify-content: center;
+}
+#form-datos {
+  display: flex;
+  flex-direction: column;
+  padding: .5em;
+  background-color: #D3C5BA;
+  width: 45%;
+  gap: 1em;
+}
+
+#form-mensaje {
+  display: flex;
+  flex-direction: column;
+  padding: .5em;
+  background-color: #D3C5BA;
+  width: 45%;
+  gap: 1em;
+}
+
+legend {
+  width: 100%;
+  background-color: #D3C5BA;
+}
+
+.campo {
+  background-color: #D3C5BA;
+}
+label {
+  width: 20%;
+  background-color: #D3C5BA;
+}
+input {
+  width: 70%;
+  border-radius: .3em;
+  border-style: hidden;
+}
+
+textarea {
+  width: 100%;
+  height: 75%;
+  border-radius: 0.3em;
+  padding: .5em;
+  border-style: none;
+}
+
+#contenedor-enviar {
+  display: flex;
+  width: 100%;
+  background-color: #D3C5BA;
+  justify-content: center;
+  align-items: center;
+}
+
+#enviar {
+  width: 30%;
+  height: 2.5em;
+  margin: 1em;
+  border-radius: 2em;
+  background-color: #AB8485;  
+  box-shadow: 0.4em 0.5em 0.6em rgba(0,0,0,0.3);
+  border-style: hidden;
+}
+
+#enviar:hover {
+  color: #fff;
+}
+
+#sucursales {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em;
+  height: auto;
+  width: 100%;
+  justify-content: center;
+}
+
+#sucursales ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 1em auto;
+  padding: 1em;
+  max-width: 100%;
+  height: auto;
+  justify-content: center;
+  gap: 3em;
+}
+
+.suc {
+  width: 30%;
+}
+
+iframe {
+  border-radius: 1em;
+  box-shadow: 0.4em 0.5em 0.6em rgba(0,0,0,0.3);
+}
+/*final pagina de contacto*/
 
 /* inicio de carousel*/
 #carosuel-mod {
@@ -428,7 +591,7 @@ h2 {
 }
 /* Fin de carousel*/
 
-/* inicio footer */
+/* INICIO FOOTER */
 footer {
   display: flex;
   flex-wrap: wrap;
@@ -436,6 +599,8 @@ footer {
   width: 100%;
   background-color: #4A3A44;
   padding: 2em 2em 0 2em;
+  border-top-right-radius: 2em;
+  border-top-left-radius: 2em;
 }
 
 #footer-redes {

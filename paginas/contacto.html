@@ -36,55 +36,77 @@
     </header>
 
     <main class="presentacion">
-        <h1>Contacto</h1>
-        <img src="../imagenes/contacto1.jpg" alt="">
-        <p class="contenido-presentacion">Para comunicarte con nosotros, solicitar turnos o consultar por productos envianos un mensaje desde el siguiente formulario y nos comunicaremos a la brevedad.</p>
+        <figure class="img-presentacion">
+            <img src="../imagenes/contacto1.jpg" alt="spa1">
+        </figure>
+        <div class="contenido-presentacion">
+            <h1>CONTACTO</h1>
+            <p class="texto-presentacion">Para comunicarte con nosotros, solicitar turnos o consultar por productos envianos un mensaje desde el siguiente formulario y nos comunicaremos a la brevedad.</p>
+        </div>
     </main>
 
     <!--FORMULARIO DE CONTACTO-->
-    <form action="" method="">
-        <fieldset> <!--define una sección dentro de un formulario-->
-            <legend><b>Datos personales</b></legend> <!--nombre de la sección-->
 
-            <label for="apellido" name="apellido" id="apellido">Apellido</label> 
-            <input type="text" name="apellido" id="apellido" required>
+    <section id="contacto">
+        <form action="" method="">
+            <div id="datos-msj">
+                <fieldset id="form-datos"> <!--define una sección dentro de un formulario-->
+                    <legend>Datos personales:</legend> <!--nombre de la sección-->
+                    <div class="campo">
+                        <label for="apellido" name="apellido" id="apellido">Apellido</label> 
+                        <input type="text" name="apellido" id="apellido" required>
+                    </div>
+                    <div class="campo">
+                        <label for="nombre" name="nombre" id="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" required>
+                    </div>
+                    <div class="campo">
+                        <label for="telefono" name="telefono" id="telefono">Teléfono</label>
+                        <input type="number" name="telefono" id="telefono" required>
+                    </div>
+                    <div class="campo">
+                        <label for="mail" name="mail" id="mail">e-mail</label>
+                        <input type="email" name="mail" id="mail" required>
+                    </div>
+                </fieldset>
 
-            <label for="nombre" name="nombre" id="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" required><br><br>
+                <fieldset id="form-mensaje">
+                    <legend>Mensaje</legend>
+                    <textarea name="comentarios" id="comentarios" cols="66" rows="6" placeholder="Dejanos tu consulta"></textarea>
+                </fieldset>
+            </div>
+            <div id="contenedor-enviar">
+                <button id="enviar" input type="submit" value="">Enviar Mensaje</button>
+            </div>
+        </form>
+    </section>
 
-            <label for="telefono" name="telefono" id="telefono">Teléfono</label>
-            <input type="number" name="telefono" id="telefono" required>
-
-            <label for="mail" name="mail" id="mail">e-mail</label>
-            <input type="email" name="mail" id="mail" required><br><br> 
-        </fieldset> <br>
-
-        <fieldset>
-            <legend><b>Mensaje:</b></legend>
-            <textarea name="comentarios" id="comentarios" cols="66" rows="6" placeholder="Dejanos tu consulta"></textarea>
-        </fieldset>
-
-        <button input type="submit" value="">Enviar Mensaje</button>
-    </form>
-
-    <h2>Buscá tu sucursal más cercana</h2>
-    <ul>
-        <li>Recoleta: </li>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.1266253894682!2d-58.39735833036322!3d-34.59135159830993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca982ff2d8eb%3A0x5b7659efa2466475!2sPe%C3%B1a%202200%2C%20C1114%20CABA!5e0!3m2!1ses-419!2sar!4v1696258995452!5m2!1ses-419!2sar"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <li>Belgrano: </li>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d580.8355284394912!2d-58.45501318260599!3d-34.561099933865364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d306145feb%3A0xeafcaa0954dc6669!2sAv.%20Juramento%202221%2C%20C1428DNK%20CABA!5e0!3m2!1ses-419!2sar!4v1696259081747!5m2!1ses-419!2sar"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <li>Villa Crespo: </li>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1952.7972694930672!2d-58.440626764599244!3d-34.59909250158312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca74aa998233%3A0x13e35ed12cd4299d!2sMalabia%20355%2C%20C1414DLG%20CABA!5e0!3m2!1ses-419!2sar!4v1696259212624!5m2!1ses-419!2sar"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </ul>
+    <section id="sucursales">
+        <h2>Buscá tu sucursal más cercana</h2>
+        <ul>
+            <div class="suc">
+                <li>Recoleta</li>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.1266253894682!2d-58.39735833036322!3d-34.59135159830993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca982ff2d8eb%3A0x5b7659efa2466475!2sPe%C3%B1a%202200%2C%20C1114%20CABA!5e0!3m2!1ses-419!2sar!4v1696258995452!5m2!1ses-419!2sar"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="suc">
+                <li>Belgrano</li>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d580.8355284394912!2d-58.45501318260599!3d-34.561099933865364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d306145feb%3A0xeafcaa0954dc6669!2sAv.%20Juramento%202221%2C%20C1428DNK%20CABA!5e0!3m2!1ses-419!2sar!4v1696259081747!5m2!1ses-419!2sar"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="suc">
+                <li>Villa Crespo</li>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1952.7972694930672!2d-58.440626764599244!3d-34.59909250158312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca74aa998233%3A0x13e35ed12cd4299d!2sMalabia%20355%2C%20C1414DLG%20CABA!5e0!3m2!1ses-419!2sar!4v1696259212624!5m2!1ses-419!2sar"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </ul>
+    </section>
 
     <div id="whatsapp-button">
         <a href="https://wa.me/+5491123036900?text=Hola%20desde%20mi%20sitio%20web" target="_blank">
