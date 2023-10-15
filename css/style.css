@@ -6,8 +6,9 @@
   animation: jump 0.5s ease infinite alternate;
   background-color: transparent;
 }
-img{
-max-width: 100%;
+
+img {
+  max-width: 100%;
 }
 
 #whatsapp-button a {
@@ -43,8 +44,9 @@ max-width: 100%;
   font-family: 'Lora', serif;
 }*/
 
-h1, h2 {
-  font-family: 'Lora',serif;
+h1,
+h2 {
+  font-family: 'Lora', serif;
 }
 
 * {
@@ -60,7 +62,7 @@ h1, h2 {
 /*top header + logo*/
 #top-header {
   max-width: 100%;
-  height: 2.1em; 
+  height: 2.1em;
 }
 
 #top-header a {
@@ -68,9 +70,10 @@ h1, h2 {
   text-decoration: none;
   margin: 0 1em;
   color: #4A3A44;
+
 }
 
-header div {
+header div a {
   display: flex;
   margin: 0 auto;
   max-width: 100%;
@@ -78,9 +81,11 @@ header div {
   height: 6em;
 }
 
-header div img {
+header div a img {
   margin: 0 auto;
+
 }
+
 /*final top header + logo*/
 
 /*REVISAR CÓMO QUEREMOS QUE SE ACOMODE EL MENÚ AL ACHICAR LA PANTALLA*/
@@ -92,7 +97,7 @@ header nav ul {
   margin: 0 auto;
   max-width: 100%;
   height: 5em;
-  background-color:#E3D4CD;
+  background-color: #E3D4CD;
   justify-content: center;
 }
 
@@ -107,7 +112,7 @@ header nav ul li a {
   display: flex;
   margin: 0.5em;
   padding: 1em;
-  background-color: #AB8485;  
+  background-color: #AB8485;
   height: 3.5em;
   border-radius: 1em;
   text-align: center;
@@ -121,6 +126,7 @@ header nav ul li a {
 header nav ul li a:hover {
   background-color: #4A3A44;
 }
+
 /*termina menú de navegación*/
 
 /*ENCABEZADO de PAGINAS SECUNDARIAS*/
@@ -129,7 +135,7 @@ header nav ul li a:hover {
   flex-wrap: wrap;
   margin: 0 auto;
   padding: 0.5em;
-  height: auto;
+  height: 45%;
   width: 100%;
   justify-content: center;
   overflow: hidden;
@@ -139,13 +145,10 @@ header nav ul li a:hover {
 .img-presentacion {
   border-radius: 1em;
   margin: 1em auto;
+  height: 90%;
   width: 38em;
   overflow: hidden;
   object-fit: cover;
-}
-
-.presentacion img {
-  
 }
 
 .contenido-presentacion {
@@ -153,11 +156,16 @@ header nav ul li a:hover {
   width: 35em;
   align-items: center;
 }
+
 .presentacion h1 {
   margin-top: 0.5em;
   width: auto;
   height: 15%;
   text-align: center;
+}
+.presentacion h2{
+  width: auto;
+  font-size: 90%;
 }
 
 .presentacion p {
@@ -166,6 +174,7 @@ header nav ul li a:hover {
   line-height: 2em;
   font-size: 1em;
 }
+
 /*fin encabezado de páginas secundarias*/
 
 /*OPCIONES de SERVICIOS INDEX*/
@@ -189,7 +198,7 @@ header nav ul li a:hover {
   width: 15em;
   border-radius: 1em;
   background-color: #D3C5BA;
-  box-shadow: 0.4em 0.5em 0.6em rgba(0,0,0,0.3);
+  box-shadow: 0.4em 0.5em 0.6em rgba(0, 0, 0, 0.3);
 }
 
 .tarjeta h2 {
@@ -203,11 +212,13 @@ header nav ul li a:hover {
 }
 
 .tarjeta .imagen-servicio {
-  height: 45%;
+  display: flex;
+  height: 50%;
   margin: 0.3em;
+  object-fit: cover;
 }
 
-.imagen-servicio img{
+.imagen-servicio img {
   display: block;
   width: 100%;
   height: auto;
@@ -221,7 +232,6 @@ header nav ul li a:hover {
   height: 25%;
   text-align: center;
   background-color: #D3C5BA;
-  border-radius: 2em;
   justify-content: center;
 }
 
@@ -236,13 +246,13 @@ header nav ul li a:hover {
   background-color: #AB8485;
   border-radius: 2em;
   text-align: center;
-  box-shadow: 0.4em 0.5em 0.6em rgba(0,0,0,0.3);
+  box-shadow: 0.4em 0.5em 0.6em rgba(0, 0, 0, 0.3);
 }
-
 
 .boton-masinfo a:hover {
   color: #fff;
 }
+
 /*fin sección opciones de servicios del index*/
 
 /*SECCIÓN NOSOTROS INDEX*/
@@ -255,20 +265,20 @@ header nav ul li a:hover {
 }
 
 #contenedor-texto-nosotros {
-  width: 50em;
+  width: 50%;
   height: auto;
   padding: 3em 0 3em 2em;
   float: left;
 }
 
 #nosotros p {
-  font-family: 'Lora',serif;
+  font-family: 'Lora', serif;
   line-height: 2.5em;
   font-size: 1.2em;
 }
 
 #contenedor-img-nosotros {
-  width: 30em;
+  width: 50%;
   padding: 1em;
   height: auto;
   float: right;
@@ -277,11 +287,12 @@ header nav ul li a:hover {
 #nosotros img {
   height: auto;
   object-fit: cover;
-  width: 90%;
+  width: 70%;
   float: right;
   border-radius: 2em;
   margin-right: 1em;
 }
+
 /*fin sección nosotros del index*/
 
 /*SECCIÓN INSTALACIONES DEL INDEX*/
@@ -296,34 +307,34 @@ header nav ul li a:hover {
 #contenedor-img-instalaciones {
   display: flex;
   flex-wrap: wrap;
-  width: 30em;
+  width: 50%;
   padding: 1em;
   height: auto;
-
   float: left;
   gap: 0.5em;
 }
 
-#contenedor-img-instalaciones img{
-  width: 40%;
+#contenedor-img-instalaciones img {
+  width: 30%;
   height: auto;
   border-radius: 0.4em;
+  object-fit: cover;
 }
 
 #contenedor-texto-instalaciones {
-  width: 50em;
+  width: 50%;
   height: auto;
   padding: 4em 3em 3em 0em;
-
   float: right;
 }
 
-#instalaciones p{
-  font-family: 'Lora',serif;
+#instalaciones p {
+  font-family: 'Lora', serif;
   line-height: 2.5em;
   font-size: 1.2em;
   text-align: start;
 }
+
 /*fin sección instalaciones del index*/
 
 /*OPCIONES PAGINA SPA y FACIALES*/
@@ -348,7 +359,7 @@ h2 {
   margin: 1em auto;
   padding: 1em;
   background-color: #D3C5BA;
-  box-shadow: 0.4em 0.5em 0.6em rgba(0,0,0,0.5);
+  box-shadow: 0.4em 0.5em 0.6em rgba(0, 0, 0, 0.5);
 }
 
 .titulo-izq {
@@ -389,17 +400,17 @@ h2 {
 }
 
 .img-der {
-  overflow:hidden;
+  overflow: hidden;
   margin: .5em 1.5em;
   width: 15em;
   height: 15em;
   border-radius: 50%;
   float: right;
-  object-fit:cover
+  object-fit: cover;
 }
 
 .img-izq {
-  overflow:hidden;
+  overflow: hidden;
   margin: .5em 1.5em;
   width: 15em;
   height: 15em;
@@ -418,10 +429,8 @@ h2 {
   padding: 0.5em;
   height: 12%;
   text-align: center;
-  background-color: #AB8485;
-  border-radius: 2em;
   width: 30%;
-  box-shadow: 0.4em 0.5em 0.6em rgba(0,0,0,0.3);
+  background-color: #D3C5BA;
 }
 
 .boton-turno a {
@@ -430,12 +439,115 @@ h2 {
   color: #4A3A44;
   font: 100%;
   background-color: #AB8485;
+  box-shadow: 0.4em 0.5em 0.6em rgba(0, 0, 0, 0.3);
 }
 
 .boton-turno a:hover {
   color: #fff;
 }
+
 /*fin opciones pagina spa y faciales*/
+
+/*OPCIONES MANICURA*/
+
+#opciones-m {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1em;
+  margin: 0;
+  background-color: #EDE9EA;
+  justify-content: space-evenly;
+}
+
+#final-m {
+  display: flex;
+  width: 100%;
+  margin-top: 1em;
+  justify-content: center;
+}
+
+#final-m h2 {
+  font-size: 120%;
+}
+.tarjeta-m {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin: 1em;
+  padding: 1em;
+  background-color: #D3C5BA;
+  box-shadow: 0.4em 0.5em 0.6em rgba(0, 0, 0, 0.5);
+  justify-content: center;
+}
+
+.tarjeta-m h2 {
+  text-align: center;
+  height: 10%;
+  padding: 0.5em;
+  color: #4A3A44;
+  font-size: 1.25em;
+  background-color: #D3C5BA;
+}
+
+.cont-img-m {
+  display: flex;
+  height: 50%;
+  margin: 0.3em;
+  object-fit: cover;
+  border-radius: 2em;
+}
+
+.cont-img-m img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 2em;
+}
+
+.descripcion-m {
+  display: flex;
+  height: 20%;
+  background-color: #D3C5BA;
+
+  padding: .5em;
+}
+
+.descripcion-m p {
+  width: 100%;
+  background-color: #D3C5BA;
+  font-size: 90%;
+  text-align: center;
+}
+
+.tarjeta-m .boton-turno {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  height: 15%;
+  text-align: center;
+  background-color: #D3C5BA;
+  justify-content: center;
+
+}
+
+.tarjeta-m .boton-turno a {
+  width: 90%;
+  height: 70%;
+  padding-top: .5em;
+  text-decoration: none;
+  color: #4A3A44;
+  font: 100%;
+  background-color: #AB8485;
+  border-radius: 2em;
+  text-align: center;
+  box-shadow: 0.4em 0.5em 0.6em rgba(0, 0, 0, 0.3);
+}
+
+.tarjeta-m .boton-turno a:hover {
+  color: #fff;
+}
 
 /*FORMULARIO CONTACTO*/
 
@@ -456,7 +568,7 @@ form {
   padding: 1em;
   border-radius: 2em;
   justify-content: center;
-  box-shadow: 0.4em 0.5em 0.6em rgba(0,0,0,0.3);
+  box-shadow: 0.4em 0.5em 0.6em rgba(0, 0, 0, 0.3);
 }
 
 #datos-msj {
@@ -464,6 +576,7 @@ form {
   background-color: #D3C5BA;
   justify-content: center;
 }
+
 #form-datos {
   display: flex;
   flex-direction: column;
@@ -490,10 +603,12 @@ legend {
 .campo {
   background-color: #D3C5BA;
 }
+
 label {
   width: 20%;
   background-color: #D3C5BA;
 }
+
 input {
   width: 70%;
   border-radius: .3em;
@@ -521,8 +636,8 @@ textarea {
   height: 2.5em;
   margin: 1em;
   border-radius: 2em;
-  background-color: #AB8485;  
-  box-shadow: 0.4em 0.5em 0.6em rgba(0,0,0,0.3);
+  background-color: #AB8485;
+  box-shadow: 0.4em 0.5em 0.6em rgba(0, 0, 0, 0.3);
   border-style: hidden;
 }
 
@@ -557,15 +672,16 @@ textarea {
 
 iframe {
   border-radius: 1em;
-  box-shadow: 0.4em 0.5em 0.6em rgba(0,0,0,0.3);
+  box-shadow: 0.4em 0.5em 0.6em rgba(0, 0, 0, 0.3);
 }
+
 /*final pagina de contacto*/
 
 /* inicio de carousel*/
 #carosuel-mod {
   margin: 0;
   padding: 0;
-  background-color:#EDE9EA;
+  background-color: #EDE9EA;
   height: 25em;
 }
 
@@ -573,22 +689,23 @@ iframe {
   margin: 0 auto;
   width: 80%;
   justify-content: center;
-  
   height: 25em;
   box-sizing: border-box;
 }
 
-#carosuel-mod div div div img{
- height: 25em;
+#carosuel-mod div div div img {
+  height: 25em;
 }
 
 #carosuel-mod span {
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
 }
+
 .carousel-indicators {
   background-color: transparent;
 }
+
 /* Fin de carousel*/
 
 /* INICIO FOOTER */
@@ -599,15 +716,13 @@ footer {
   width: 100%;
   background-color: #4A3A44;
   padding: 2em 2em 0 2em;
-  border-top-right-radius: 2em;
-  border-top-left-radius: 2em;
 }
 
 #footer-redes {
   display: flex;
   flex-direction: column;
   float: left;
-  width: 40em;
+  width: 50%;
   background-color: #4A3A44;
 }
 
@@ -621,12 +736,12 @@ footer {
 
 #footer-sucursales {
   float: right;
-  width: 40em;
+  width: 50%;
   background-color: #4A3A44;
   text-align: right;
 }
 
-footer div h3{
+footer div h3 {
   background-color: #4A3A44;
   color: #EDE9EA;
 }
@@ -635,19 +750,19 @@ footer div a {
   background-color: #4A3A44;
 }
 
-footer div a i{
+footer div a i {
   display: inline;
   background-color: #4A3A44;
 }
 
-footer div ul{
+footer div ul {
   margin: 0;
   padding: 0;
 }
 
-footer div ul li{
+footer div ul li {
   background-color: #4A3A44;
-  font-weight:lighter;
+  font-weight: lighter;
   color: #fff;
 }
 
@@ -660,4 +775,211 @@ footer article {
   color: #fff;
   font-size: 80%;
 }
+
 /* fin footer */
+
+
+
+@media all and (max-width:760px) {
+  footer {
+    width: 100%;
+    background-color: #4A3A44;
+    padding: 2em 2em 0em 2em;
+    font-size: 40%;
+  }
+
+  #footer-redes {
+    width: 100%;
+    background-color: #4A3A44;
+    margin-bottom: 1em;
+    text-align: center;
+    align-items: center;
+  }
+
+  #enlaces-redes {
+    background-color: #4A3A44;
+    width: 20em;
+  }
+
+  #footer-sucursales {
+    width: 100%;
+    background-color: #4A3A44;
+    text-align: center;
+    font-size: 130%;
+  }
+
+  footer article {
+    width: 100%;
+    text-align: center;
+    background-color: #4A3A44;
+    margin: 0;
+    padding: 1em;
+    color: #fff;
+    font-size: 110%;
+  }
+
+  #nosotros {
+    padding: 2em;
+    height: auto;
+    width: 100%;
+  }
+
+  #contenedor-texto-nosotros {
+    width: 100%;
+    height: auto;
+    padding: 1em;
+    text-align: center;
+  }
+
+  #nosotros p {
+    width: 100%;
+    font-family: 'Lora', serif;
+    line-height: 1.8em;
+    font-size: 90%;
+  }
+
+  #contenedor-img-nosotros {
+    width: 100%;
+    height: auto;
+  }
+
+  #nosotros img {
+    height: auto;
+    width: 100%;
+    border-radius: 2em;
+    margin: 0;
+  }
+
+  #instalaciones {
+    padding: 2em;
+    height: auto;
+    width: 100%;
+  }
+
+  #contenedor-img-instalaciones {
+    width: 100%;
+    padding: 1em;
+    height: auto;
+    gap: 0.5em;
+  }
+
+  #contenedor-img-instalaciones img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.4em;
+  }
+
+  #contenedor-texto-instalaciones {
+    width: 100%;
+    height: auto;
+    padding: 1em;
+  }
+
+  #instalaciones p {
+    font-family: 'Lora', serif;
+    width: 100%;
+    line-height: 1.8em;
+    font-size: 90%;
+    text-align: center;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 14em;
+    width: 100%;
+    padding: 0;
+  }
+
+  header nav ul li {
+    width: 50%;
+  }
+
+  #carosuel-mod div div img {
+    object-fit: cover;
+  }
+
+  .bloque {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    font-size: 60%;
+  }
+
+  .bloque h2, .bloque p {
+    text-align: center;
+  }  
+
+  .boton-turno {
+    width: 100%;
+  }
+
+  .presentacion {
+    flex-direction: column;
+    font-size: 70%;
+    width: 100%;
+  }
+
+  .img-presentacion {
+    object-fit: scale-down;
+    width: 90%;
+  }
+
+  .contenido-presentacion {
+    object-fit: scale-down;
+    width: 90%;
+  }
+
+  #sucursales {
+    padding: 0;
+  }
+
+  #sucursales h2 {
+    font-size: 170%;
+    padding: 0 0.2em;
+    margin-top: 1em;
+  }
+
+  #sucursales ul {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    font-weight: 800;
+    font-size: 120%;
+    padding: 0;
+    margin: 0;
+    gap: 0;    
+  }
+
+  .suc {
+    width: 100%;
+    text-align: center;
+    transform: scale(0.8);
+    padding: 0;
+  }
+
+  .suc li {
+    margin-bottom: 1em;
+  }
+
+
+  #contacto {
+    padding: 0;
+  }
+
+  #datos-msj {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #form-datos, #form-mensaje, #contenedor-enviar, #enviar {
+    width: 100%;
+  }
+
+  .campo label, .campo input  {
+    width: 100%;
+  }
+}
+
